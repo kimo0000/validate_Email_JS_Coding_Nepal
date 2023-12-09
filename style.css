@@ -1,0 +1,45 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  height: 100vh;
+  background: radial-gradient(#dec 25%, #f50 100%);
+  display: grid;
+  place-items: center;
+}
+.wrapper {
+  width: 40%;
+  max-width: 350px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper input {
+  width: 80%;
+  padding: 10px;
+  border-radius: 12px;
+}
+.wrapper input:focus {
+  border: 1px solid #111;
+}
+.wrapper input:focus ~ .envelope {
+  color: #f50;
+}
+.wrapper .envelope {
+  color: #777;
+}
+.wrapper .check {
+  color: green;
+}
